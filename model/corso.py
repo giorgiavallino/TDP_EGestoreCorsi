@@ -1,6 +1,5 @@
 from dataclasses import dataclass
 
-
 @dataclass
 class Corso:
     codins: str
@@ -9,7 +8,6 @@ class Corso:
     pd: int
     # studenti: list[Studente] = None # lazy initialization
     # matricole: list[str] = None
-
 
     def __eq__(self, other):
         return self.codins == other.codins

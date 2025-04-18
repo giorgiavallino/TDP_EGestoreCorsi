@@ -6,6 +6,7 @@ from mysql.connector import errorcode
 class DBConnect:
     """Class that is used to create and manage a pool of connections to the database.
     It implements a class method that works as a factory for lending the connections from the pool"""
+
     # we keep the pool of connections as a class attribute, not an instance attribute
     _cnxpool = None
 
